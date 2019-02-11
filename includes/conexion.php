@@ -2,7 +2,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $pass = "root";
-$bd = "Mariana1";
+$bd = "lanetflix";
 
 $conexion = mysqli_connect($servidor,$usuario,$pass,$bd);
 

@@ -22,7 +22,7 @@ while ($resultado = mysqli_fetch_assoc($query_editar)){
 <body>
 	<h1><?php echo $titulo_pagina;?></h1>
 	
-	<form action="includes/insertar-pelicula.php" method="POST">
+	<form action="includes/actualizar-pelicula.php" method="POST">
 		<span>Título:</span>
 		<input type="text" name="titulo" placeholder="Título" value="<?php echo $titulo; ?>">
 		<br><br>
@@ -40,7 +40,8 @@ while ($resultado = mysqli_fetch_assoc($query_editar)){
 		<span>Poster:</span>
 		<input type="text" name="poster" placeholder="Poster" value="<?php echo $poster; ?>">
 		<br><br>
-		<input type="submit" name="submit" value="Insertar Registo">
+		<input type="hidden" name="id" value="<?php echo $id; ?>">
+		<input type="submit" name="submit" value="Editar Registo">
 	</form>
 </body>
 </html>

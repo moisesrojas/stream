@@ -51,12 +51,11 @@ $consulta = mysqli_query($conexion, "SELECT * FROM peliculas");
 while ($resultado = mysqli_fetch_assoc($consulta)) {
 	echo "<tr>";
 	echo "<td>" . $resultado['id'] . "</td>";
-	echo "<td><a href='editar-pelicula.php?id=" . $resultado['id'] . "'>" . $resultado['titulo'] . "</a></td>";
+	echo "<td>" . $resultado['titulo'] . "</td>";
 	echo "<td>" . $resultado['sinopsis'] . "</td>";
 	echo "<td>" . $resultado['lanzamiento'] . "</td>";
 	echo "<td>" . $resultado['director'] . "</td>";
 	echo "<td><img width='150' src='" . $resultado['imagen'] . "'></td>";
-	echo "<td><a href='includes/eliminar-pelicula.php?id=" . $resultado['id'] . "'>Eliminar</a></td>";
 	echo "</tr>";
 }
 ?>

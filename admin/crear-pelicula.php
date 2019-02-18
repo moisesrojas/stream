@@ -11,6 +11,8 @@ include_once("includes/conexion.php");
 </head>
 <body>
 	<h1><?php echo $titulo;?></h1>
+	<?php include_once("includes/menu.php"); ?>
+	
 	
 	<form action="includes/insertar-pelicula.php" method="POST">
 		<span>Título:</span>

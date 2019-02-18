@@ -33,8 +33,8 @@ $consulta = mysqli_query($conexion, "SELECT * FROM peliculas");
 </head>
 <body> 
 <h1 class="titulo"> <?php echo $titulo; ?></h1>
-<p class="estiloParrafo">Mi nombre es <?php echo $nombre_completo;?> y estoy en clase <?php echo $materia; ?></p>
 
+<?php include_once("includes/menu.php"); ?>
 
 <table class="registros">
 	<tbody>

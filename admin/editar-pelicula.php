@@ -22,6 +22,8 @@ while ($resultado = mysqli_fetch_assoc($query_editar)){
 <body>
 	<h1><?php echo $titulo_pagina;?></h1>
 	
+	<?php include_once("includes/menu.php"); ?>
+	
 	<form action="includes/actualizar-pelicula.php" method="POST">
 		<span>Título:</span>
 		<input type="text" name="titulo" placeholder="Título" value="<?php echo $titulo; ?>">
